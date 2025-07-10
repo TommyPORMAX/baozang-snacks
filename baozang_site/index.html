@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>饱藏小吃 Bao Zang Snacks</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+    .carousel img {
+      flex-shrink: 0;
+      width: 100%;
+      height: auto;
+      scroll-snap-align: center;
+      border-radius: 0.5rem;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- 顶部导航栏 -->
+  <header class="bg-yellow-500 p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="0648024735ca612072e5c13eaa3497f.png" alt="Bao Zang Logo" class="h-12 w-auto">
+        <h1 class="text-2xl font-bold text-white">饱藏小吃</h1>
+      </div>
+      <nav class="space-x-4 text-white">
+        <a href="#menu" class="hover:underline">菜单</a>
+        <a href="#about" class="hover:underline">关于我们</a>
+        <a href="#contact" class="hover:underline">联系我们</a>
+        <a href="#comments" class="hover:underline">留言</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 欢迎横幅 -->
+  <section class="bg-yellow-100 text-center py-10">
+    <h2 class="text-4xl font-bold mb-2">地道川味 · 宝藏发现</h2>
+    <p class="text-lg text-gray-700">凉拌面皮 | 烤苕皮 | 牛筋面 | 臭豆腐</p>
+  </section>
+
+  <!-- 菜单展示 -->
+  <section id="menu" class="py-10 bg-gray-50">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-semibold mb-6 text-center">菜单</h2>
+      <div class="flex justify-center mb-6">
+        <img src="3d3f84e1fe65a915b1503fa8dd0bfb7.png" alt="Bao Zang Menu" class="w-full max-w-5xl rounded shadow">
+      </div>
+      <div class="carousel overflow-hidden py-4">
+        <img src="95487af8ade31984a6e0385eb17507d.jpg" alt="炸鸡架">
+        <img src="51b06d44bdb6957e7aff40ce0a3d1e7.jpg" alt="无骨鸡柳">
+      </div>
+      <div class="flex justify-center mt-6">
+        <video controls class="max-w-3xl rounded shadow">
+          <source src="7dac968341f0242339ed01aea1ae7e79.mp4" type="video/mp4">
+          您的浏览器不支持视频播放。
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section id="about" class="py-10">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">关于饱藏小吃</h2>
+      <p class="max-w-xl mx-auto text-gray-700">饱藏小吃扎根法拉盛，主打经典川味和街头风味，注重食材新鲜和地道调味，只为唤醒你的味蕾记忆。</p>
+    </div>
+  </section>
+
+  <!-- 联系我们 -->
+  <section id="contact" class="py-10 bg-yellow-50">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">联系我们</h2>
+      <p class="mb-2">📍 地址：35-32 Union St #1FL, Flushing, NY 11354</p>
+      <p class="mb-2">📞 电话：(716) 666-0066</p>
+      <p class="mb-4">🕐 营业时间：每天 12AM – 12PM</p>
+      <p>📦 支持平台：饭团外卖、熊猫外卖</p>
+    </div>
+  </section>
+
+  <!-- 留言区 -->
+  <section id="comments" class="py-10">
+    <div class="container mx-auto max-w-xl">
+      <h2 class="text-3xl font-semibold mb-4 text-center">留言板</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="您的姓名" class="w-full p-2 border rounded">
+        <textarea placeholder="欢迎留言与建议..." class="w-full p-2 border rounded h-32"></textarea>
+        <button type="submit" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">提交留言</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-yellow-500 text-white text-center py-4">
+    © 2025 饱藏小吃 Bao Zang Snacks | 欢迎光临
+  </footer>
+
+</body>
+</html>
